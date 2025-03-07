@@ -338,3 +338,79 @@ body {
         opacity: 0;
     }
 }
+.countdown-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .countdown-container {
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .countdown-container h2 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    
+    #countdown {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 80px;
+    }
+    
+    #countdown span {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    .countdown-label {
+        font-size: 1rem !important;
+        font-weight: normal !important;
+    }
+    
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+        .countdown-container h2 {
+            font-size: 1.5rem;
+        }
+        
+        #countdown span {
+            font-size: 2rem;
+        }
+        
+        .countdown-item {
+            min-width: 70px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .countdown-container h2 {
+            font-size: 1.2rem;
+        }
+        
+        #countdown span {
+            font-size: 1.5rem;
+        }
+        
+        .countdown-item {
+            min-width: 60px;
+        }
+        
+        #countdown {
+            gap: 10px;
+        }
+    }
